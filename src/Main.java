@@ -25,7 +25,20 @@ public class Main {
         }
 
         System.out.println("Задание 1.3");
-
+        int sitPassengers = 55;
+        int standPassengers = 23;
+        int wagonCapacity = 102;
+        int sitPlaces = 60;
+        int standPlaces = wagonCapacity - sitPlaces;
+        if (sitPassengers + standPassengers > wagonCapacity) {
+            System.out.println("Вагон переполнен");
+        }
+        if (sitPassengers < sitPlaces) {
+            System.out.println("Есть еще " + (sitPlaces - sitPassengers) + " сидячих мест");
+        }
+        if (standPassengers < standPlaces ) {
+            System.out.println("Есть еще " + (standPlaces - standPassengers) + " стоячих мест");
+        }
 
 
     }
